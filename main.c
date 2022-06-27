@@ -276,7 +276,6 @@ int loadShaderFromFile(const char* fileName, int shaderType)
         size_t TOTAL_SIZE = ftell(shaderSource);
         rewind(shaderSource);
 
-        shader = (char*)malloc(TOTAL_SIZE + 1);
         char* shader = (char*)malloc(TOTAL_SIZE + 1);
         if(fread(shader, 1, TOTAL_SIZE, shaderSource) <= 0)
         {
