@@ -267,16 +267,6 @@ void useShader(unsigned int programID)
     glUseProgram(programID);
 }
 
-void setInt(unsigned int programID, const char* name, int value)
-{
-    glUniform1i(glGetUniformLocation(programID, name), value);
-}
-
-void setFloat(unsigned int programID, const char* name, float value)
-{
-    glUniform1f(glGetUniformLocation(programID, name), value);
-}
-
 int loadShaderFromFile(const char* fileName, int shaderType)
 {
 	FILE* shaderSource = fopen(fileName, "rb");
