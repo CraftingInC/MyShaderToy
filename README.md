@@ -4,6 +4,10 @@ The SHADERTOY website is not owned or ran by me. I just wanted a way to test the
 Shadertoy website : https://www.shadertoy.com/view/fd33zn  
 The code from that URL will work with some miner tweaking of the void main().  
 
+HOW THIS WORKS  
+--------------
+When running, you can edit the shader.txt file. Once you make a change to that shader code, click onto the running program and hit R to reload, and it will hot-reload your shader. Read the LOG.TXT file for any errors.  
+  
 WINDOWS SETUP  
 --------------  
 Get GCC for windows -- Tested this stable version on windows 10  
