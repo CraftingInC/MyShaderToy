@@ -281,13 +281,16 @@ int loadShaderFromFile(const char* fileName, int shaderType)
 	FILE* shaderSource = fopen(fileName, "rb");
 	if (shaderSource != NULL)
     {
-        char* shader;
         fseek(shaderSource, 0, SEEK_END);
         size_t TOTAL_SIZE = ftell(shaderSource);
         rewind(shaderSource);
 
         shader = (char*)malloc(TOTAL_SIZE + 1);
-        fread(shader, 1, TOTAL_SIZE, shaderSource);
+        char* shader = (char*)malloc(TOTAL_SIZE + 1);
+        if(fread(shader, 1, TOTAL_SIZE, shaderSource) != 0)
+        {
+            log("ERROR : Unable to fread shader");
+        }
         shader[TOTAL_SIZE] = 0;
         fclose(shaderSource);
 
