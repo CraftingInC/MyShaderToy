@@ -1,0 +1,29 @@
+// FRAGMENT
+#version 450 core
+
+// DO NOT TOUCH THESE ----------------
+#define fragCoord gl_FragCoord.xy
+out vec4 fragColor;
+uniform vec2 iResolution;
+uniform float iTime;
+uniform vec4 iMouse;
+int iFrame = 0; //uniform int iFrame; // shader playback frame
+// NOTE : Verify that it's void main()
+
+// NOTE : Not all shadertoy code will work since this project
+//        is not setup for external textures or sound files.
+
+// -------SHADERTOY WEBSITE DEMO CODE CAN BE PUT BELOW THIS LINE --------
+
+
+void main()
+{
+    // Normalized pixel coordinates (from 0 to 1)
+    vec2 uv = fragCoord / iResolution.xy;
+
+    // Time varying pixel color
+    vec3 col = 0.5 + 0.5 * cos(iTime + uv.xyx + vec3(0, 2, 4));
+
+    // Output to screen
+    fragColor = vec4(col,1.0);
+}
