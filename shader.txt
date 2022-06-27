@@ -2,6 +2,7 @@
 #version 450 core
 
 // DO NOT TOUCH THESE ----------------
+precision highp float;
 #define fragCoord gl_FragCoord.xy
 out vec4 fragColor;
 uniform vec2 iResolution;
