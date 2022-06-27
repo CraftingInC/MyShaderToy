@@ -1,5 +1,8 @@
 # My Version of Shadertoy written in C
 
+YOUTUBE DEMONSTRATION  
+https://www.youtube.com/watch?v=AE0gdy_-90U  
+  
 The SHADERTOY website is not owned or ran by me. I just wanted a way to test their code using my own executable, without the need for their website.  
 Shadertoy website : https://www.shadertoy.com/view/fd33zn  
 The code from that URL will work with some miner tweaking of the void main().  
