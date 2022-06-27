@@ -8,6 +8,11 @@ HOW THIS WORKS
 --------------
 When running, you can edit the shader.txt file. Once you make a change to that shader code, click onto the running program and hit R to reload, and it will hot-reload your shader. Read the LOG.TXT file for any errors.  
   
+TODO
+--------------
+I eventually want to add multi-texture ( all 4 channels ) as well as Sound.  
+I also want to make a GUI so that you won't need a separate text editor to edit the shader. Currently, if the shader fails, the program fails. ( Although the window might stay open, it will just show a black screen. )  
+  
 WINDOWS SETUP  
 --------------  
 Get GCC for windows -- Tested this stable version on windows 10  
