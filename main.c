@@ -9,6 +9,7 @@
 #define LOGGER_IMPLEMENTATION
 #include "logging.h"
 
+#include <stdio.h>      // FILE
 #include <stdlib.h>     // malloc()   free()
 
 unsigned int LoadShader(const char* fragmentPath);
