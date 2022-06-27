@@ -13,6 +13,8 @@ int iFrame = 0; //uniform int iFrame; // shader playback frame
 // NOTE : Not all shadertoy code will work since this project
 //        is not setup for external textures or sound files.
 
+// EXAMPLE : https://www.shadertoy.com/view/fd33zn
+// The code from that URL will work with some miner tweaking of the void main().
 // -------SHADERTOY WEBSITE DEMO CODE CAN BE PUT BELOW THIS LINE --------
 
 
