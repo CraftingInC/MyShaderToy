@@ -45,7 +45,7 @@ NOTE : I was able to get OpenGL 4.5 on VirtualBox with this setup.
 Get GCC for Linux  
 sudo apt install gcc  
   
-NOTE : After updating GLAD, Mesa 22.1.2 is now reporting correctly, but OpenGL 4.6 is still not working yet in VirtualBox. I'm not sure if it's GLFW3 or VirtualBox that has the problem. OpenGL 4.5 still works though.  
+NOTE : After updating GLAD, Mesa 22.1.3 is now reporting correctly, but OpenGL 4.6 is still not working yet in VirtualBox. I'm not sure if it's GLFW3 or VirtualBox that has the problem. OpenGL 4.5 still works though.  
 https://itsfoss.com/install-mesa-ubuntu/  
   
 If you need GLXINFO  
