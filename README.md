@@ -57,6 +57,6 @@ sudo apt install libglfw3-dev
 Instead of GLEW I use GLAD.  
 https://glad.dav1d.de/  
   
-gcc -O2 -m64 -o test main.c libs/glad/glad/glad.c -I./libs/glad/ -I/usr/include/libdrm -lglfw
+gcc -O2 -m64 -o test main.c libs/glad/glad/glad.c -I./libs/glad/ -I/usr/include/libdrm -lglfw -ldl
   
 then run ./test  
